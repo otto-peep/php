@@ -18,7 +18,7 @@
 		else
 		{
 			print"\n";
-			exit(0);	
+			break ;	
 		}
 	}
 ?>
