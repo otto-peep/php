@@ -13,7 +13,10 @@
 					printf("Le chiffre %d est Impair\n", $number);
 			}
 			else
+			{
 				print "'" . $number . "' n'est pas un chiffre\n" ;
+				$number = NULL;
+			}
 		}
 		else
 		{

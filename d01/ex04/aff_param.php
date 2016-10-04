@@ -1,9 +1,12 @@
 #!/usr/bin/php
 <?php
-	unset($argv[0]);
-	foreach ($argv as &$elem)
+	if ($argc >= 2)
 	{
-		print($elem);
-		echo "\n";
+		unset($argv[0]);
+		foreach ($argv as &$elem)
+		{
+			print($elem);
+			echo "\n";
+		}
 	}
 ?>

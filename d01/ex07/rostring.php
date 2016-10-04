@@ -3,7 +3,7 @@
 	if ($argc == 2)
 	{
 		$s = $argv[1];
-		$arr = preg_split('/ +/', $s, -1, PREG_SPLIT_NO_EMPTY);
+		$arr = split('/ +/', $s);
 		$len = count($arr);
 		$i = 0;
 		while (++$i < ($len))
