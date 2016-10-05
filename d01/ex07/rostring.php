@@ -1,9 +1,10 @@
 #!/usr/bin/php
 <?php
-	if ($argc == 2)
+	if ($argc >= 2)
 	{
 		$s = $argv[1];
-		$arr = split('/ +/', $s);
+		$arr = array_filter(explode(" ", $s));
+		$arr = array_values($arr);
 		$len = count($arr);
 		$i = 0;
 		while (++$i < ($len))

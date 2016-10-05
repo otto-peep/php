@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
+		<title>B.A.BA</title>
 		<style>
-			body
+			body 
 			{
 				background-color: pink;
+				width: 100%;
 			}
-			.mytitle
+			p 
 			{
-				color: white;
-				font-size: 50px;
 				text-align: center;
+				font-size: 35px;
+				color: white;
 			}
-			.block
+			.block 
 			{
-				display: inline-block;
-				width: 600px;
+				width: 660px;
 				margin: auto;
 			}
-			figure
+			.image
 			{
-				margin-left: 2%
-				margin: 0;
-				width: 50%;
+				max-height: 390px;
+				margin-left: 5px;
+			}
+			.ebay
+			{
 				vertical-align: top;
 				display: inline-block;
+				margin: auto;
+				margin-right: 10px;
+			}
+			.lbc 
+			{
+				vertical-align: top;
+				display: inline-block;
+				margin: auto;
+				margin-right: 10px;
+			}
+			.links {
+				display: block;
+				text-align: center;
+				margin-top: 10px;
 			}
 			footer
 			{
+				text-align: right;
 				font-style: italic;
 				font-family: monospace;
-				text-align: right;
+				margin-right: 50px;
 			}
-
 		</style>
-		<title>
-			B.A.BA
-		</title>
-
 	</head>
+
 	<body>
-		<div class="mytitle">
-			Je suis accentué
+		<p>Je suis titrééé</p>
+
+		<div class="block">
+			<div class="ebay">
+				<img class="image" src="https://pbs.twimg.com/profile_images/698397813672058881/vpt3vjf3.jpg" alt="ebay" height="250" width="250"/>
+				<a class="links" href="http://www.ebay.fr/">www.ebay.fr</a>
+			</div>
+
+			<div class="lbc">
+				<img class="image" src="https://pbs.twimg.com/profile_images/701673942897991680/_DvLsn8l.png" alt="lbc" height="250" width="250" />
+				<a class="links" href="http://www.leboncoin.fr">www.leboncoin.fr</a>
+			</div>
 		</div>
-		<div class="image">
-			<figure>
-				<img style="width: 100%; display: inline-block;" src="https://pbs.twimg.com/profile_images/698397813672058881/vpt3vjf3.jpg" alt="ebay" width="400" height="400">
-					<figcaption>
-						<a href="http://www.ebay.fr/">E-bay</a>
-					</figcaption>
-			</figure>
-			<figure>
-				<img style="width: 100%; display: inline-block;" src="https://pbs.twimg.com/profile_images/701673942897991680/_DvLsn8l.png" alt="le bon coin" width="400" height="400">
-					<figcaption>
-						<a href="http://www.leboncoin.fr/">Le bon coin</a>
-					</figcaption>
-			</figure
-		</div>
-		<hr>
+
+		<hr />
 		<footer>
 			&copy pconin 2016
 		</footer>

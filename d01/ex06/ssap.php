@@ -1,17 +1,18 @@
 #!/usr/bin/php
 <?php
-	unset($argv[0]);
-	$arr = $argv;
-	print_r($arr);
-/*/
-	$len = count($arr);
-		$i = 0;
-		while (++$i < ($len -1))
+	if ($argc >= 2)
+	{
+		$arr = array();
+		unset($argv[0]);
+		foreach ($argv as $key=>$value)
 		{
-			print($arr[$i]);
-			print(" ");
+			$tmp = array_filter(explode(" ", trim($value, " ")));
+			$arr = array_merge($arr, $tmp);
 		}
-		print($arr[$i]);
-		print("\n");
-	}/*/
+		sort($arr);
+		foreach ($arr as $key => $value) 
+		{
+			echo $value . "\n";
+		}
+	}
 ?>

@@ -15,7 +15,7 @@ body
 	margin-top: 20px;
 	margin-left: 100px;
 	background: #909090;
-	width: 1500px;
+	width: 1400px;
 	height: 135px;
 	clear: both;
 }
@@ -53,30 +53,33 @@ body
 {
 	position: relative;
 	top: 175px;
-	left:150px;
+	left:140px;
 	background: #909090;
-	width: 140px;
-	height: 670px;
+	width: 130px;
+	height: 510px;
 }
 
 #leftimg
 {
 	position: relative;
-	left: 18px;
-	margin-top:18px;
+	left: 20px;
+	margin-top:10px;
 }
 #click
 {
-	border-radius: 25px;
-    border: 2px solid red;
+	position: relative;
+	left: 20px;
+	margin-top: 10px;
+    border: 6px solid red;
+    border-radius: 10px;
 }
 .centerbox
 {
 	position: absolute;
 	top: 185px;
-	left: 320px;
-	width: 1100px;
-	height: 700px;
+	left: 300px;
+	width: 1045px;
+	height: 595px;
 	background: #909090;
 	border-radius: 20px;
 }
@@ -84,29 +87,60 @@ body
 #cluster
 {
 	position: relative;
-	left: 40px;
-	top: 40px;
+	left: 10px;
+	top: 10px;
 }
 
 .rightbox
 {
 	position: absolute;
 	top: 185px;
-	left: 1440px;
+	left: 1365px;
 	background: #909090;
 	width: 140px;
-	height: 670px;
+	height: 510px;
 }
+
+#book
+{
+	position: relative;
+	left: 30px;
+	margin-top: 10px;
+}
+
 p
 {
-	font-size: 20px;
+	position: relative;
+	top: 5px;
+	font-family: Verdana, serif;
+	font-size: 15px;
+	left: 10px;
 }
 .inputbox
 {
 	background-color: #81F781;
-	position: absolute;
-	top: 850px;
+	position: relative;
+	top: 200px;
 	left: 100px;
 	width: 500px;
 	height: 170px;
+}
+
+#input
+{
+	position: relative;
+	top: 0px;
+	left: 5px;
+	width: 356px;
+}
+
+redshad
+{
+	text-shadow: 2px 2px 5px red;
+}
+
+#submit
+{
+	position: relative;
+	left: 4px;
 }
