@@ -15,7 +15,7 @@
 			else
 			{
 				print "'" . $number . "' n'est pas un chiffre\n" ;
-				$number = NULL;
+				$number = '';
 			}
 		}
 		else

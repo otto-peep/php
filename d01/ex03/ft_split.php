@@ -3,9 +3,9 @@
 	{
 		if (isset($s))
 		{
-			$arr = preg_split('/ +/', $s, -1, PREG_SPLIT_NO_EMPTY);
+			$arr = array_filter(explode(" ", trim($s, " ")));
 			sort($arr);
-			return ($arr);
+			return $arr;
 		}
 	}
 ?>
