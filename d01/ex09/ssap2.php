@@ -20,7 +20,7 @@
 			}
 		}
 		natcasesort($arr1);
-		array_multisort($arr2, SORT_ASC, SORT_STRING);
+		sort($arr2, SORT_STRING);
 		natcasesort($arr3);
 		foreach ($arr1 as $key => $value) 
 		{
