@@ -1,6 +1,6 @@
 <?php
 	if ($_POST['submit'] !== "OK")
-	{	echo("Error SUBMIT NOT OK\n");	
+	{	echo("ERROR\n");	
 		return ;}
 	if ($_POST['login'] && $_POST['passwd'])
 	{
@@ -12,24 +12,21 @@
 		{
 			$dtbase = file_get_contents('private/passwd');
 			$array = unserialize($dtbase);
-			foreach($array as $tab)
+			foreach($array as $key=>$value)
 			{
-				foreach ($tab as $key => $value)
-				{
-					if ($key === 'login') && ($value === $_POST['login'])
+					if ($value['login'] === $_POST['login'])
 					{
 						echo "ERROR\n";
 						return ;
 					}
-				}
 			}
-			$logs[] = ['login' => $_POST['login']
+			$logs[] = ['login' => $_POST['login'],
 						'passwd' => hash('whirlpool', $_POST['passwd'], FALSE)];
 			file_put_contents('private/passwd', serialize($logs));
 		}
 		else
 		{
-			$logs[] = ['login' => $_POST['login']
+			$logs[] = ['login' => $_POST['login'],
 						'passwd' => hash('whirlpool', $_POST['passwd'], FALSE)];
 			file_put_contents('private/passwd', serialize($logs));
 		}
