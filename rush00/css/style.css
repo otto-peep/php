@@ -1,0 +1,142 @@
+html {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body
+{
+	width: 100%;
+	min-width: 960px;
+	margin: 0px;
+}
+
+span {
+	margin-left:40px;
+}
+
+.box
+{
+	width: 100%;
+	margin-top: 2%;
+	background-color: grey;
+
+}
+
+.basic {
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+.case {
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 3px solid #6e6e6e;
+	background-color: #d1d1d1;
+	text-decoration-color: #6e6e6e;
+	color: #6e6e6e;
+	font-size: 25px;
+	text-align: center;
+	padding:17px;
+	text-decoration: none;
+}
+
+#Bienvenue {
+	text-align: center;
+	font-size: 35px;
+	text-decoration: underline;
+}
+
+.middlePolice {
+	font-size: 18px;
+}
+
+.cat
+{
+	background-color: pink;
+	text-align: center;
+}
+
+.noUnderline {
+	text-decoration: none;
+}
+
+.row {
+	width : 960px;
+	margin : 10px auto ;
+}
+.row > div {
+	float : left;
+	margin : 0 10px;
+	background-color: white;
+}
+
+.w-1 { width : 60px; opacity: 0.0;display: inline-block;  float: left;  margin: 0;  text-align: center;}
+.w-2 { width : 140px; opacity: 0.0;display: inline-block;  float: left;  margin: 0;  text-align: center;}
+.w-3 { width : 220px; }
+.w-4 { width : 300px; }
+.w-5 { width : 380px; }
+.w-6 { width : 460px; }
+.w-7 { width : 540px; }
+.w-8 { width : 620px; }
+.w-9 { width : 700px; }
+.w-10 { width : 780px; }
+.w-11 { width : 860px; }
+.w-12 { width : 940px; }
+
+.clear { clear : both ; }
+
+.art-image
+{
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: auto;
+}
+
+footer
+{
+	position:fixed;
+	left:0px;
+	bottom:15px;
+	height:30px;
+	width:100%;
+	text-align: right;
+	font-style: italic;
+	font-family: monospace;
+	margin-right: 50px;	
+}
+
+/*----------------- HEADER ------------------*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	font-size: 21px;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+
+
+
