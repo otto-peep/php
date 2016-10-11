@@ -1,1 +1,1 @@
-CREATE DATABASE IF NOT EXISTS db_pconin;
+CREATE DATABASE db_pconin;
