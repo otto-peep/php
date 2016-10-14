@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calc</title>
+</head>
+<body>
+	<input type="text" id="nb1" value="">
+	<select name="sign" id="sign">
+			<option value="plus">+</option>
+			<option value="less">-</option>
+			<option value="mult">*</option>
+			<option value="div">/</option>
+			<option value="modulo">%</option>
+	</select>
+	<input type="text" id="nb2" value="">
+	<input type="submit" id="try" value="Try me!" onclick="submit()">
+	</input>
+
+	<script>
+		 var myVar = setInterval(function(){alert('Please, use me...')}, 30000);
+		 function submit()
+		 {
+		 	var nb1 = document.getElementById('nb1').value;
+		 	var nb2 = document.getElementById('nb2').value;
+		 	var sign = document.getElementById('sign').value;
+		 	if ((sign == 'div' || sign == 'modulo') && nb2 == '0')
+		 	{
+		 		alert("It's over 9000!");
+		 		console.log("It's over 9000!");
+		 		if (nb1 < 0 || nb2 < 0 || (nb2 - parseInt(nb2) != 0) || (nb1 - parseInt(nb1) != 0))
+		 		{
+		 			alert("Error :(");
+		 		}
+		 	}
+		 	else if (nb1 < 0 || nb2 < 0 || (nb2 - parseInt(nb2) != 0) || (nb1 - parseInt(nb1) != 0))
+		 	{
+		 		alert("Error :(");
+		 	}
+		 	else
+		 	{
+		 		if (sign == 'div')
+		 			var res = nb1 / nb2;
+		 		else if (sign == 'modulo')
+		 			var res = nb1 % nb2;
+		 		else if (sign == 'mult')
+		 			var res = nb1 * nb2;
+		 		else if (sign == 'less')
+		 			var res = nb1 - nb2;
+		 		else if (sign == 'plus')
+		 			var res = parseInt(nb1) + parseInt(nb2);
+		 		alert(res);
+		 		console.log(res);
+		 	}
+
+		 }
+	</script>
+
+</body>
+</html>
