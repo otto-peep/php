@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calcul jquery</title>
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"></script>  
+</head>
+<body>
+		<input type="text" id="nb1" value="">
+	<select name="sign" id="sign">
+			<option value="plus">+</option>
+			<option value="less">-</option>
+			<option value="mult">*</option>
+			<option value="div">/</option>
+			<option value="modulo">%</option>
+	</select>
+	<input type="text" id="nb2" value="">
+	<input type="submit" id="submit" value="Try me!">
+	</input>
+
+	<script>
+		$('#submit').click(function(){
+				var nb1 = $('#nb1').val();
+				var nb2 = $('#nb2').val();
+				var sign = $('#sign').val();
+				if ((parseInt(nb1) - nb1) != 0 ||
+				(parseInt(nb2) - nb2 != 0 || nb1 < 0 || nb2 < 0))
+				{
+					alert('Error :(');
+					console.log('Error :(');
+					return;
+				}		
+				if (nb2 == 0 && (sign == 'div' || sign == 'modulo'))
+				{
+					alert('It\'s over 9000!');
+					console.log('It\'s over 9000!');
+					return;
+				}
+				if (sign == 'plus')
+					var result = parseInt(nb1) + parseInt(nb2);
+				else if (sign == 'less')
+					var result = nb1 - nb2;
+				else if (sign == 'mult')
+					var result = nb1 * nb2;
+				else if (sign == 'div')
+					var result = nb1 / nb2;
+				else if (sign == 'modulo')
+					var result = nb1 % nb2;
+				alert(result);
+				console.log(result);
+			});
+		setInterval(function() {alert('Please, use me...');}, 30000);
+	</script>
+</body>
+</html>
